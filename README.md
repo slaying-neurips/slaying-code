@@ -12,6 +12,19 @@
 
 **Slaying** is available here as a `.json` file. 
 
+Each entry of Slaying contains:
+
+- `id`
+- `term`: A queer slang term. Sources for these terms are: GSSO, lgbtDB, Wiktionary, and the Chew Inclusive Terminology Glossary.
+- `definition`: Definition for the slang term. Some terms have multiple valid definitions -- for those cases, the definitions are split with bullet points.
+- `sentence`: Sentence using the term according to the given definition.
+- `communities`: Queer communities associated with the term (via mappings of GSSO and Wiktionary).
+- `metadata`: For examples derived from OpenSubtitles, this includes title and IMDb ID. For examples derived from Reddit, this includes the respective subreddit of origin and date. For examples derived from podcasts, this includes the respective title.
+
+---
+
+## Experiments
+
 Partial replication of the paper's experiments is possible with `case_study_i.ipynb` and `case_study_ii.ipynb`. These notebooks require:
 - Downloading [QueerReclaimLex](https://github.com/rebedorn/QueerReclaimLex).
 - Downloading [WinoQueer](https://github.com/katyfelkner/winoqueer) and following its benchmarking instructions. We test all 1B [DataDecide models](https://huggingface.co/datasets/allenai/DataDecide-data-recipes) accordingly.
